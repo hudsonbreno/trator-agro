@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.canvasContainer {
+  flex: 1;
+  background: #2e3d23;
+  position: relative;
+  border-right: 2px solid #444;
+}
+
+.sidebar {
+  width: 280px;
+  background: #222;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.hint {
+  font-size: 11px;
+  color: #888;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  margin-top: auto;
+}

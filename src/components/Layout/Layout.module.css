@@ -1,0 +1,12 @@
+.header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #444;
+}
+
+.header h3 {
+  color: #8bc34a;
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
