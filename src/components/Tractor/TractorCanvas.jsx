@@ -41,6 +41,11 @@ export const TractorCanvas = ({ onTargetClick, onDragStart, onDragMove, onDragEn
     
     return () => clearInterval(interval);
   }, [updatePosition]);
+
+  // Mostra o estado do trator no console
+useEffect(() => {
+  console.log('TRACTOR:', tractor);
+}, [tractor]);
   
   const handleClick = (e) => {
     const rect = canvasRef.current.getBoundingClientRect();

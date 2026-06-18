@@ -2,10 +2,15 @@ import { useState, useCallback, useRef } from 'react';
 import { distance, normalizeAngle, angleDifference, clamp } from '../utils/geometry';
 import { CONFIG } from '../utils/constants';
 
-export const useTractor = (initialX, initialY, canvasWidth, canvasHeight) => {
+export const useTractor = (
+  initialX,
+  initialY,
+  canvasWidth = 1200,
+  canvasHeight = 800
+) => {
   const [tractor, setTractor] = useState({
-    x: initialX,
-    y: initialY,
+    x: initialX ?? canvasWidth / 2,
+    y: initialY ?? canvasHeight / 2,
     angle: 0,
     speed: 0,
     target: null,
